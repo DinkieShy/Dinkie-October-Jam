@@ -6,7 +6,6 @@ public class followMouse : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		float speed;
 
 	}
 
