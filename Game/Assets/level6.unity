@@ -416,6 +416,7 @@ GameObject:
   - component: {fileID: 1602001307}
   - component: {fileID: 1602001304}
   - component: {fileID: 1602001303}
+  - component: {fileID: 1602001305}
   m_Layer: 0
   m_Name: Tilemap
   m_TagString: Untagged
@@ -495,6 +496,46 @@ EdgeCollider2D:
   - {x: -6.3968925, y: 4.601147}
   - {x: -6.3981414, y: 7.4009337}
   - {x: 11.457675, y: 7.4013677}
+--- !u!68 &1602001305
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1602001301}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 8.402759, y: -7.404868}
+  - {x: 8.402635, y: -4.5969973}
+  - {x: 7.4040093, y: -4.598842}
+  - {x: 7.401654, y: -4.4001384}
+  - {x: 8.399875, y: -4.403194}
+  - {x: 8.39985, y: -1.5971997}
+  - {x: 4.405651, y: -1.5944675}
+  - {x: 4.403509, y: -1.3998355}
+  - {x: 8.396265, y: -1.402738}
+  - {x: 8.395423, y: 4.401556}
+  - {x: 1.5988497, y: 4.4000063}
+  - {x: 1.5979722, y: 1.599728}
+  - {x: 5.598986, y: 1.5998979}
+  - {x: 5.600706, y: 1.4027328}
+  - {x: 1.5969908, y: 1.404578}
+  - {x: 1.5986012, y: -4.399845}
+  - {x: 4.5984087, y: -4.4036517}
+  - {x: 4.5970984, y: -4.5983715}
+  - {x: 1.4061517, y: -4.5951996}
+  - {x: 1.4011285, y: 4.599991}
+  - {x: 8.6004305, y: 4.598004}
+  - {x: 8.597062, y: -7.5964975}
+  - {x: -6.5952263, y: -7.593253}
+  - {x: -6.596419, y: -7.405021}
+  - {x: 8.405425, y: -7.3980827}
 --- !u!483693784 &1602001307
 TilemapRenderer:
   m_ObjectHideFlags: 0
