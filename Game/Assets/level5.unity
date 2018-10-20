@@ -342,7 +342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  level: 0
+  level: 5
   portal: {fileID: 925911642}
 --- !u!114 &476095760
 MonoBehaviour:
@@ -429,7 +429,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!60 &925911641
 PolygonCollider2D:
   m_ObjectHideFlags: 0

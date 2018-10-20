@@ -249,7 +249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  level: 0
+  level: 4
   portal: {fileID: 1891912242}
 --- !u!114 &95562792
 MonoBehaviour:
