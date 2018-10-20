@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - egg
+  - portal
   layers:
   - Default
   - TransparentFX
@@ -46,6 +48,9 @@ TagManager:
     locked: 0
   - name: Walls
     uniqueID: 3937331209
+    locked: 0
+  - name: Darkness
+    uniqueID: 1529887975
     locked: 0
   - name: Characters
     uniqueID: 1403133747
