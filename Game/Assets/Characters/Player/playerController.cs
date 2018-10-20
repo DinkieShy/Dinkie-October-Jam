@@ -7,12 +7,11 @@ public class playerController : MonoBehaviour {
 	public float speed;
 
 	private Rigidbody2D rb2d;
-	public GameObject portal;
+	public Rigidbody2D portal;
 
 	// Use this for initialization
 	void Start () {
 		rb2d = GetComponent<Rigidbody2D>();
-		portal = GameObject.FindWithTag("Finish");
 	}
 
 	// Update is called once per frame
@@ -29,7 +28,10 @@ public class playerController : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.gameObject.CompareTag("egg")){
 			other.gameObject.SetActive(false);
-			portal.SetActive(true);
+			portal.gameObject.SetActive(true);
+		}
+		else if(other.gameObject.CompareTag("portal")){
+
 		}
 	}
 }
