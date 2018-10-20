@@ -1,16 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerController : MonoBehaviour {
 
 	public float speed;
+
+	public int level;
 
 	private Rigidbody2D rb2d;
 	public Rigidbody2D portal;
 
 	// Use this for initialization
 	void Start () {
+		Scene currentScene;
+		currentScene = SceneManager.GetActiveScene();
+		int.TryParse(currentScene.name[5].ToString(), out level);
 		rb2d = GetComponent<Rigidbody2D>();
 	}
 
@@ -30,8 +36,8 @@ public class playerController : MonoBehaviour {
 			other.gameObject.SetActive(false);
 			portal.gameObject.SetActive(true);
 		}
-		else if(other.gameObject.CompareTag("portal")){
-
+		else if(other.gameObject.CompareTag("Finish")){
+			SceneManager.LoadScene("level" + ++level);
 		}
 	}
 }

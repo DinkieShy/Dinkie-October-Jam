@@ -1787,6 +1787,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  level: 1
   portal: {fileID: 524814422}
 --- !u!60 &1662897713
 PolygonCollider2D:

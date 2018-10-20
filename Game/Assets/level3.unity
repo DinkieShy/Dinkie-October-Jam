@@ -281,6 +281,7 @@ GameObject:
   - component: {fileID: 779594344}
   - component: {fileID: 779594343}
   - component: {fileID: 779594342}
+  - component: {fileID: 779594346}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -311,7 +312,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -350,6 +351,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &779594346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 779594341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e4284858b0d66347ae66bea487e5399, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1380574753}
 --- !u!1 &1311136921
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,6 +373,7 @@ GameObject:
   - component: {fileID: 1311136922}
   - component: {fileID: 1311136924}
   - component: {fileID: 1311136923}
+  - component: {fileID: 1311136925}
   m_Layer: 0
   m_Name: Tilemap
   m_TagString: Untagged
@@ -4103,6 +4117,86 @@ Tilemap:
     m_DirtyIndex: 0
   - serializedVersion: 1
     m_DirtyIndex: 0
+--- !u!60 &1311136925
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1311136921}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 5.599735, y: -0.59905416}
+      - {x: 10.398964, y: -0.5960024}
+      - {x: 10.402013, y: -3.4017007}
+      - {x: 8.405565, y: -3.4012678}
+      - {x: 8.401755, y: -5.598294}
+      - {x: 9.401846, y: -5.5984173}
+      - {x: 9.401809, y: -14.400559}
+      - {x: 3.5979393, y: -14.402242}
+      - {x: 3.5971968, y: -11.401326}
+      - {x: 3.4021566, y: -11.400915}
+      - {x: 3.40113, y: -14.400696}
+      - {x: -5.401898, y: -14.4015045}
+      - {x: -5.4015303, y: -9.402125}
+      - {x: -5.5954533, y: -9.398591}
+      - {x: -5.5996037, y: -14.400246}
+      - {x: -8.402109, y: -14.401041}
+      - {x: -8.402219, y: -6.5977}
+      - {x: -5.4016776, y: -6.598172}
+      - {x: -5.4023232, y: 4.402412}
+      - {x: 1.4010271, y: 4.402181}
+      - {x: 1.4033189, y: 2.4026868}
+      - {x: 13.40308, y: 2.4023478}
+      - {x: 13.401477, y: -15.4008045}
+      - {x: 10.5722275, y: -15.401889}
+      - {x: 10.331815, y: -15.671609}
+      - {x: 13.807485, y: -15.885541}
+      - {x: 13.787199, y: 2.8343644}
+      - {x: 1.9710684, y: 2.8801727}
+      - {x: 1.938332, y: 4.9094825}
+      - {x: -5.765652, y: 4.8518248}
+      - {x: -5.6982684, y: -6.2971234}
+      - {x: -8.619262, y: -6.383262}
+      - {x: -8.822313, y: -14.68863}
+      - {x: 10.596918, y: -15.410113}
+      - {x: 10.59756, y: -2.576677}
+      - {x: 10.597706, y: -0.40092936}
+      - {x: 5.5973577, y: -0.40080762}
+      - {x: 4.403008, y: -0.39791608}
+      - {x: 4.406129, y: -6.401392}
+      - {x: -1.4012495, y: -6.402143}
+      - {x: -1.4009553, y: -1.5994229}
+      - {x: 1.4018534, y: -1.5978513}
+      - {x: 1.4017729, y: -1.4022248}
+      - {x: 1.4029287, y: -0.40035546}
+      - {x: 1.5949144, y: -0.4022385}
+      - {x: 1.5980575, y: -3.5978243}
+      - {x: 1.4018319, y: -3.59784}
+      - {x: 1.4022969, y: -1.5961825}
+      - {x: 1.4017836, y: -1.403105}
+      - {x: -1.4009432, y: -1.3972379}
+      - {x: -1.4007525, y: 1.5974065}
+      - {x: -2.5975935, y: 1.5995666}
+      - {x: -2.5973027, y: -11.596422}
+      - {x: 0.5943829, y: -11.598606}
+      - {x: 0.5974004, y: -8.599358}
+      - {x: 5.5975122, y: -8.597725}
 --- !u!1 &1380574753
 GameObject:
   m_ObjectHideFlags: 0
@@ -4240,6 +4334,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  level: 0
   portal: {fileID: 2018372429}
 --- !u!114 &1380574757
 MonoBehaviour:
