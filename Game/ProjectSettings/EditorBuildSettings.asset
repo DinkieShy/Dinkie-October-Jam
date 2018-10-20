@@ -27,8 +27,8 @@ EditorBuildSettings:
     path: Assets/level6.unity
     guid: 52051a4d2c55ccb43b5917f5fd903dab
   - enabled: 1
-    path: Assets/level8.unity
-    guid: 9e8f3885fde29be44b8372414cab3119
-  - enabled: 1
     path: Assets/level7.unity
     guid: d2aeb0c287030484db996381a98c3fcb
+  - enabled: 1
+    path: Assets/level8.unity
+    guid: 9e8f3885fde29be44b8372414cab3119
